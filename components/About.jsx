@@ -42,7 +42,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'
-                >I am an active and healthy person who works hard and always finishes what I start. I have over 15 years of experience as a software engineer and have built many different types of applications. I make sure every project I work on is done well and makes the customer happy. I have good communication skills and I can easily work with others . I am a well organized person and always take full responsibility.</p>
+                >I am an active and healthy person who works hard and always finishes what I start. I have over 15 years of experience as a software engineer and have built many different types of applications. I make sure every project I undertake is done well and makes the customer happy. I have good communication skills and I can easily work with others . I am a well organized person and always take full responsibility for my job.</p>
 
                 <motion.ul
                 initial={{opacity: 0}}
