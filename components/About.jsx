@@ -33,7 +33,7 @@ const About = ({isDarkMode}) => {
             initial={{opacity: 0, scale: 0.9}}
             whileInView={{opacity: 1, scale: 1}}
             transition={{duration: 0.6}}
-            className='w-64 sm:w-80 rounded-3xl max-w-none'>
+            className='w-64 sm:w-80 rounded-3xl max-w-none  self-baseline'>
                 <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
             </motion.div>
             <motion.div 
@@ -42,7 +42,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'
-                >I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+                >I am an active and healthy person who works hard and always finishes what I start. I have over 15 years of experience as a software engineer and have built many different types of applications. I make sure every project I work on is done well and makes the customer happy. I have good communication skills and I can easily work with others . I am a well organized person and always take full responsibility.</p>
 
                 <motion.ul
                 initial={{opacity: 0}}

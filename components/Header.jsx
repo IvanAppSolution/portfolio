@@ -11,27 +11,27 @@ const Header = () => {
       whileInView={{scale: 1}}
       transition={{duration: 0.8, type: 'spring', stiffness: 100}}
       >
-        <Image src={assets.profile_img} alt='' width='70' className='rounded-full w-32'/>
+        <Image src={assets.profile_img} alt='' className='rounded-full w-36'/>
       </motion.div>
       <motion.h3 
       initial={{y: -20, opacity: 0}}
       whileInView={{y: 0, opacity: 1}}
       transition={{duration: 0.6, delay: 0.3}}
       className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-            Hi! I'm William Mark <Image src={assets.hand_icon} alt='' className='w-6'/></motion.h3>
+            Hi! I'm Ivan Alcuino <Image src={assets.hand_icon} alt='' className='w-6'/></motion.h3>
     <motion.h1 
     initial={{y: -30, opacity: 0}}
     whileInView={{y: 0, opacity: 1}}
     transition={{duration: 0.8, delay: 0.5}}
-    className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-        frontend web developer based in London.</motion.h1>
+    className='text-3xl sm:text-6xl lg:text-[50px] font-Ovo'>
+        Full stack software engineer in Cebu City Philippines.</motion.h1>
 
         <motion.p
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-        I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.
+        I am a full stack software engineer from Cebu City, Philippines with 15+ years of experience in wide system application system.
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

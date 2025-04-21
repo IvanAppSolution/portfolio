@@ -6,10 +6,7 @@ import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
-import figma from './figma.png';
 import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -28,13 +25,21 @@ import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
 import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
-import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import app_logo from './app-logo.png';
+import sidebar_logo from './side-bar-logo.png';
+import cube_logo from './cube-logo.png';
+import gear_logo from './gear-logo.png';
+import postgress_logo from './postgress.png';
+import angular_logo from './angular-js-logo.png';
+import vue_js_logo from './vue-js-logo.png';
+import php_logo from './php_logo_icon.png';
+import react_js_logo from './react.png';
+
+
 
 export const assets = {
     user_image,
@@ -45,10 +50,7 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
-    firebase,
-    figma,
     git,
-    mongodb,
     right_arrow_white,
     logo,
     logo_dark,
@@ -67,51 +69,77 @@ export const assets = {
     close_black,
     close_white,
     web_icon,
-    mobile_icon,
-    ui_icon,
-    graphics_icon,
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    app_logo,
+    cube_logo,
+    gear_logo,
+    sidebar_logo,
+    postgress_logo,
+    angular_logo,
+    react_js_logo,
+    vue_js_logo,
+    php_logo
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'eCommerce',
+        description: '',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Sales and Inventory',
+        description: '',
+        bgImage: '/work-2.jpg',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'CRM and Payroll',
+        description: '',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'CMS Web Development',
+        description: '',
+        bgImage: '/work-8.png',
+    },
+    {
+        title: 'Real Estate',
+        description: '',
         bgImage: '/work-4.png',
+    },
+    {
+        title: 'Parking System',
+        description: '',
+        bgImage: '/work-5.jpeg',
+    },
+    {
+        title: 'Subscription payment',
+        description: '',
+        bgImage: '/work-6.jpg',
+    },
+    {
+        title: 'Backend API Services',
+        description: '',
+        bgImage: '/work-7.jpg',
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.sidebar_logo, title: 'Application design', description: 'Application design and scope making the plans and implementation of software applications, focusing on both functionality and the user experience.', link: '' },
+    { icon: assets.cube_logo, title: 'Database design', description: 'Organizing data within a database. Defining data and establishing relationships between data elements.', link: '' },
+    { icon: assets.web_icon, title: 'UI/UX design', description: 'UI/UX design and creating a seamless user experience.', link: '' },
+    { icon: assets.gear_logo, title: 'Troubleshoot/\nEnhancement', description: 'systematic process to identify and resolve issues. Add features and improve functionality or performance.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'ReactJs, NextJs, NestJs, Strapi, ExpressJs, Vue.Js, Angular, PHP, Sql, TailwindCSS, MUI, CI/CD' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Science in Information Technology (BSIT)' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Sales and Inventory, CRM, Payroll, Parking  System, eCommerce, Real Estate' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+   assets.react_js_logo, assets.vue_js_logo, assets.angular_logo, assets.vscode, assets.postgress_logo, assets.php_logo, assets.git, 
 ];
