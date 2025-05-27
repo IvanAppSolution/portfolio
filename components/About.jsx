@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const About = ({isDarkMode}) => {
   return (
-    <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-10'
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 1}}
@@ -42,7 +42,10 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'
-                >I am an active and healthy person who works hard and always finishes what I start. I have over 15 years of experience as a software engineer and have built many different types of applications. I make sure every project I work on is done well and makes the customer happy. I have good communication skills and I can easily work with others . I am a well organized person and always take full responsibility.</p>
+                >I am an active and athletic person. I always finish what I started. I have over 15 years of experience in software software engineering. 
+                I have built different types of system applications. I make sure every project I take is well done and makes the customer happy. 
+                I have good communication and I can work with others in a team. I am a well organized person and always take full responsibility for my job.
+                </p>
 
                 <motion.ul
                 initial={{opacity: 0}}

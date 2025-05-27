@@ -86,58 +86,46 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'eCommerce',
-        description: '',
-        bgImage: '/work-1.png',
+        title: 'Shoes Shop',
+        description: 'eCommerse web application with admin control, product management, and payment integration.',
+        bgImage: '/site-1.jpg',
+        githubLink: 'https://github.com/IvanAppSolution/shoes-shop',
+        liveLink: 'https://shoes-shop-iota.vercel.app/',
     },
     {
-        title: 'Sales and Inventory',
-        description: '',
-        bgImage: '/work-2.jpg',
+        title: 'Agent Management System',
+        description: 'Management system for agents performance monitoring and sales tracking.',
+        bgImage: '/site-2.jpg',
+        githubLink: 'https://github.com/IvanAppSolution/agent-performance',
+        liveLink: 'https://agent-performance.vercel.app/login',
     },
     {
-        title: 'CRM and Payroll',
-        description: '',
-        bgImage: '/work-3.png',
+        title: 'Online Product',
+        description: 'Simple ecommerce web application project using NextJs 15.',
+        bgImage: '/site-3.jpg',
+        githubLink: 'https://github.com/IvanAppSolution/online-product',
+        liveLink: 'https://online-product.vercel.app/',
     },
     {
-        title: 'CMS Web Development',
-        description: '',
-        bgImage: '/work-8.png',
+        title: 'Portfolio Website',
+        description: 'My personal portfolio website built with Next.js and Tailwind CSS.',
+        bgImage: '/site-4.jpg',
+        githubLink: 'https://github.com/IvanAppSolution/portfolio',
+        liveLink: 'https://portfolio-ivanappsolutions-projects.vercel.app/',
     },
-    {
-        title: 'Real Estate',
-        description: '',
-        bgImage: '/work-4.png',
-    },
-    {
-        title: 'Parking System',
-        description: '',
-        bgImage: '/work-5.jpeg',
-    },
-    {
-        title: 'Subscription payment',
-        description: '',
-        bgImage: '/work-6.jpg',
-    },
-    {
-        title: 'Backend API Services',
-        description: '',
-        bgImage: '/work-7.jpg',
-    },
+   
 ]
 
 export const serviceData = [
-    { icon: assets.sidebar_logo, title: 'Application design', description: 'Application design and scope making the plans and implementation of software applications, focusing on both functionality and the user experience.', link: '' },
-    { icon: assets.cube_logo, title: 'Database design', description: 'Organizing data within a database. Defining data and establishing relationships between data elements.', link: '' },
-    { icon: assets.web_icon, title: 'UI/UX design', description: 'UI/UX design and creating a seamless user experience.', link: '' },
-    { icon: assets.gear_logo, title: 'Troubleshoot/\nEnhancement', description: 'systematic process to identify and resolve issues. Add features and improve functionality or performance.', link: '' },
+    { icon: assets.sidebar_logo, title: 'Application design', description: 'Applications design defines target customer needs and provide features and solutions. ', link: '' },
+    { icon: assets.cube_logo, title: 'System & database design', description: 'Implements the application design by defining software requirements.', link: '' },   
+    { icon: assets.gear_logo, title: 'Troubleshoot/\nEnhancement', description: 'Identifying and resolving known issues. Add features and improve user experience and application performance.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'ReactJs, NextJs, NestJs, Strapi, ExpressJs, Vue.Js, Angular, PHP, Sql, TailwindCSS, MUI, CI/CD' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'ReactJs, NextJs, ExpressJs, Vue.Js, Angular, PHP, Sql, TailwindCSS' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Science in Information Technology (BSIT)' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Sales and Inventory, CRM, Payroll, Parking  System, eCommerce, Real Estate' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'eCommerce, Sales and Inventory, Payroll, Real Estate, Parking Application System' }
 ];
 
 export const toolsData = [
