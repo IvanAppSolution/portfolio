@@ -42,7 +42,7 @@ const Work = ({isDarkMode}) => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
-              className='  flex item-center'
+              className='flex item-center'
               > 
               <div className='w-auto mx-auto'> 
                 <a target="_blank"  href={data.liveLink}>
@@ -51,11 +51,19 @@ const Work = ({isDarkMode}) => {
               </div>
             </motion.div>
         </motion.div>
-        <div className='w-full mb-10' >
+        <div className='flex flex-col items-center mb-10' >
           <h2 className='font-semibold text-center'>{data.title}</h2>
           <p className='text-gray-700 text-center'>{data.description}</p>
-          <p className='text-gray-700 text-center'><a target="_blank" href={data.liveLink}>{data.liveLink}</a></p>
-          <p className='text-gray-700 text-center'><a target="_blank" href={data.githubLink}>{data.githubLink}</a></p>
+          <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <div className='group'><a href={data.liveLink} target="_blank" className='group-hover:scale-105 hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>
+              Check Live
+            </a></div>
+            <div className='group'><a href={data.githubLink} target="_blank" className='group-hover:scale-105 hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>
+              Github Repo
+            </a></div>
+          </div>
+          
+          
         </div>  
       </div>
      ))}
