@@ -46,7 +46,6 @@ const About = ({isDarkMode}) => {
                 I have built different types of system applications. I make sure every project I take is well done and makes the customer happy. 
                 I have good communication and I can work with others in a team. I am a well organized person and always take full responsibility for my job.
                 </p>
-
                 <motion.ul
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
