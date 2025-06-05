@@ -55,10 +55,10 @@ const Work = ({isDarkMode}) => {
           <h2 className='font-semibold text-center'>{data.title}</h2>
           <p className='text-gray-700 text-center'>{data.description}</p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-            <div className='group'><a href={data.liveLink} target="_blank" className='group-hover:scale-105 hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>
+            <div className='group'><a href={data.liveLink} target="_blank" className='group-hover:scale-105 lg:flex items-center gap-1 px-5 py-1 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>
               Check Live
             </a></div>
-            <div className='group'><a href={data.githubLink} target="_blank" className='group-hover:scale-105 hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>
+            <div className='group'><a href={data.githubLink} target="_blank" className='group-hover:scale-105 lg:flex items-center gap-1 px-5 py-1 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>
               Github Repo
             </a></div>
           </div>
