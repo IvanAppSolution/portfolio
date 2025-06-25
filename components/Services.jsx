@@ -30,18 +30,18 @@ const Services = () => {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I am a full stack software engineer from Cebu City, Philippines with 15+ years of experience in wide system application system.</motion.p>
+        I am a full stack software engineer from Cebu City, Philippines with 15 years of experience in wide system application system.</motion.p>
 
         <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.9, duration: 0.6 }}
+        transition={{ delay: 0.6, duration: 0.6 }}
         className='grid grid-cols-auto gap-6 my-10'>
             {serviceData.map(({icon, title, description, link}, index)=>(
                 <motion.div 
                 whileHover={{scale: 1.05}}
                 key={index}
-                className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
+                className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
                     <Image src={icon} alt='' className='w-10'/>
                     <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
                     <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
