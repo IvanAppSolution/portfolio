@@ -84,7 +84,7 @@ export const assets = {
     php_logo
 };
 
-export const workData = [
+export const workDataWeb = [
     {
         title: 'Shoes Shop',
         description: 'eCommerse web application with admin control, product management, and payment integration.',
@@ -100,26 +100,49 @@ export const workData = [
         liveLink: 'https://agent-performance.vercel.app/login',
     },
     {
-        title: 'Online Product',
-        description: 'Simple ecommerce web application project using NextJs 15.',
-        bgImage: '/site-3.jpg',
-        githubLink: 'https://github.com/IvanAppSolution/online-product',
-        liveLink: 'https://online-product.vercel.app/',
-    },
-    {
         title: 'Portfolio Website',
         description: 'My personal portfolio website built with Next.js and Tailwind CSS.',
         bgImage: '/site-4.jpg',
         githubLink: 'https://github.com/IvanAppSolution/portfolio',
         liveLink: 'https://portfolio-ivanappsolutions-projects.vercel.app/',
     },
-   
+    // {
+    //     title: 'Online Product',
+    //     description: 'Simple ecommerce web application project using NextJs 15.',
+    //     bgImage: '/site-3.jpg',
+    //     githubLink: 'https://github.com/IvanAppSolution/online-product',
+    //     liveLink: 'https://online-product.vercel.app/',
+    // },
+];
+
+export const workDataApp = [
+    {
+        title: 'eCommerce Shoes App',
+        description: 'eCommerse mobile application to purchase shoes online.',
+        bgImage: '/app1.png',
+        githubLink: 'https://github.com/IvanAppSolution/ecommerce-shoes-app',
+        liveLink: '',
+    },
+    {
+        title: 'Expense Tracker App',
+        description: 'Expense tracker app monitors your personal income and expense. Input personal income and daily expense will track the total balance in wallet app and view the history in most recent activity, weekly, monthly and yearly.',
+        bgImage: '/app2.png',
+        githubLink: 'https://github.com/IvanAppSolution/expense-tracker-app',
+        liveLink: '',
+    },
+    {
+        title: 'Find Movies App',
+        description: 'Netflix like app that will let you find your favorite movies using your phone using Android or iOS.',
+        bgImage: '/app3.png',
+        githubLink: 'https://github.com/IvanAppSolution/search-movies-app',
+        liveLink: '',
+    }   
 ]
 
 export const serviceData = [
     { icon: assets.sidebar_logo, title: 'Application design', description: 'Applications design defines target customer needs and provide features and solutions. ', link: '' },
     { icon: assets.cube_logo, title: 'System & database design', description: 'Implements the application design by defining software requirements.', link: '' },   
-    { icon: assets.gear_logo, title: 'Troubleshoot/\nEnhancement', description: 'Identifying and resolving known issues. Add features and improve user experience and application performance.', link: '' },
+    { icon: assets.gear_logo, title: 'Enhancement & Added features', description: 'Improve known issues for application performance. Add features for better service.', link: '' },
 ]
 
 export const infoList = [
