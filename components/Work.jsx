@@ -1,11 +1,9 @@
-import { useState } from 'react'
-import { assets, workDataWeb, workDataApp } from '@/assets/assets'
+import { workDataWeb, workDataApp } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
 import { motion } from "motion/react"
 
 const Work = ({isDarkMode}) => {
-  let [works, setWorks] =  useState(assets.works)
+  // let [works, setWorks] =  useState(assets.works)
 
 //   const showMoreWork = () => {
      
@@ -50,9 +48,9 @@ const Work = ({isDarkMode}) => {
                     </a>
                   </div>
                 </motion.div>
-                <div className='flex flex-col items-center mb-10 mt-4' >
+                <div className='flex flex-col items-center mb-10 mt-4 dark:text-white' >
                   <h2 className='font-semibold text-center'>{data.title}</h2>
-                  <p className='text-gray-700 text-center'>{data.description}</p>
+                  <p className='text-gray-700 text-center dark:text-white/80'>{data.description}</p>
                   <div className="flex flex-col sm:flex-row items-center  mt-4">
                     <div className='group'><a href={data.liveLink} target="_blank" className='group-hover:scale-105 lg:flex items-center gap-1 px-5 py-1 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>
                       Live
@@ -86,9 +84,9 @@ const Work = ({isDarkMode}) => {
                     </a>
                   </div>
                 </motion.div>
-                <div className='flex flex-col items-center mb-10 mt-4' >
+                <div className='flex flex-col items-center mb-10 mt-4 dark:text-white' >
                   <h2 className='font-semibold text-center'>{data.title}</h2>
-                  <p className='text-gray-700 text-center'>{data.description}</p>
+                  <p className='text-gray-700 text-center dark:text-white/80'>{data.description}</p>
                   <div className="flex flex-col sm:flex-row items-center  mt-4">
                     <div className='group'><a href={data.githubLink} target="_blank" className='group-hover:scale-105 lg:flex items-center gap-1 px-5 py-1 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>
                       Github

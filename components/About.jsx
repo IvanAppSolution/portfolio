@@ -1,6 +1,5 @@
 import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
 import { motion } from "motion/react"
 
 const About = ({isDarkMode}) => {
@@ -27,7 +26,7 @@ const About = ({isDarkMode}) => {
         <motion.div 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
-        transition={{duration: 0.8}}
+        transition={{duration: 0.6}}
         className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
             <motion.div
             initial={{opacity: 0, scale: 0.9}}
@@ -39,17 +38,16 @@ const About = ({isDarkMode}) => {
             <motion.div 
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
-            transition={{duration: 0.6, delay: 0.8}}
+            transition={{duration: 0.6, delay: 0.6}}
             className='flex-1'>
-                <p className='mb-10 max-w-2xl font-Ovo'
-                >I am an active and athletic person. I always finish what I started. I have over 15 years of experience in software software engineering. 
-                I have built different types of system applications. I make sure every project I take is well done and makes the customer happy. 
-                I have good communication and I can work with others in a team. I am a well organized person and always take full responsibility for my job.
+                <p className='mb-10 max-w-2xl font-Ovo'>
+                    I am an active and athletic person. I have built different types of applications for over 15 years as a software engineer. My teammates often tell me that I am always fully charged due to my quick response and problem solving skills. 
+                    I have good communication and can easily work with others. I learn fast and adapt easily. Once I start coding, I don’t stop working until I finish my objective. I always keep plans for the day, organize things to do and have a minimalist attitude.
                 </p>
                 <motion.ul
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
-                transition={{duration: 0.8, delay: 1}}
+                transition={{duration: 0.6, delay: 0.6}}
                 className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                     {infoList.map(({icon, iconDark, title, description}, index)=>(
                         <motion.li 
@@ -66,13 +64,13 @@ const About = ({isDarkMode}) => {
                 <motion.h4
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1.3, duration: 0.5 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
                 className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I use</motion.h4>
 
                 <motion.ul
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 0.6 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
                 className='flex items-center gap-3 sm:gap-5'>
                     {toolsData.map((tool, index)=>(
                         <motion.li 

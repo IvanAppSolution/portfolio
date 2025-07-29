@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+import user_image from './user-image-crop.jpg';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -12,7 +12,7 @@ import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
+import profile_img from './profile-img.jpg';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -38,8 +38,7 @@ import angular_logo from './angular-js-logo.png';
 import vue_js_logo from './vue-js-logo.png';
 import php_logo from './php_logo_icon.png';
 import react_js_logo from './react.png';
-
-
+import mysql_logo from './mysql-5-logo.png';
 
 export const assets = {
     user_image,
@@ -81,13 +80,14 @@ export const assets = {
     angular_logo,
     react_js_logo,
     vue_js_logo,
-    php_logo
+    php_logo,
+    mysql_logo
 };
 
 export const workDataWeb = [
     {
         title: 'Shoes Shop',
-        description: 'eCommerse web application with admin control, product management, and payment integration.',
+        description: 'eCommerse site with admin control, product management and stripe payment integration.',
         bgImage: '/site-1.jpg',
         githubLink: 'https://github.com/IvanAppSolution/shoes-shop',
         liveLink: 'https://shoes-shop-iota.vercel.app/',
@@ -101,7 +101,7 @@ export const workDataWeb = [
     },
     {
         title: 'Portfolio Website',
-        description: 'My personal portfolio website built with Next.js and Tailwind CSS.',
+        description: 'Personal portfolio project build with Next.js, Motion animation and Tailwind CSS.',
         bgImage: '/site-4.jpg',
         githubLink: 'https://github.com/IvanAppSolution/portfolio',
         liveLink: 'https://portfolio-ivanappsolutions-projects.vercel.app/',
@@ -117,15 +117,15 @@ export const workDataWeb = [
 
 export const workDataApp = [
     {
-        title: 'eCommerce Shoes App',
-        description: 'eCommerse mobile application to purchase shoes online.',
+        title: 'Shoes App - Expo Go',
+        description: 'eCommerse mobile application for running shoes.',
         bgImage: '/app1.png',
         githubLink: 'https://github.com/IvanAppSolution/ecommerce-shoes-app',
         liveLink: '',
     },
     {
         title: 'Expense Tracker App',
-        description: 'Expense tracker app monitors your personal income and expense. Input personal income and daily expense will track the total balance in wallet app and view the history in most recent activity, weekly, monthly and yearly.',
+        description: 'Expense tracker app monitors your personal income and expense.',
         bgImage: '/app2.png',
         githubLink: 'https://github.com/IvanAppSolution/expense-tracker-app',
         liveLink: '',
@@ -140,17 +140,17 @@ export const workDataApp = [
 ]
 
 export const serviceData = [
-    { icon: assets.sidebar_logo, title: 'Application design', description: 'Applications design defines target customer needs and provide features and solutions. ', link: '' },
+    { icon: assets.sidebar_logo, title: 'Applications', description: 'Applications design defines target customer needs and provide features and solutions. ', link: '' },
     { icon: assets.cube_logo, title: 'System & database design', description: 'Implements the application design by defining software requirements.', link: '' },   
     { icon: assets.gear_logo, title: 'Enhancement & Added features', description: 'Improve known issues for application performance. Add features for better service.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'ReactJs, NextJs, ExpressJs, Vue.Js, Angular, PHP, Sql, TailwindCSS' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'ReactJs, NextJs, ExpressJs, Vue, Angular, PHP, Sql, TailwindCSS' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Science in Information Technology (BSIT)' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'eCommerce, Sales and Inventory, Payroll, Real Estate, Parking Application System' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'eCommerce, Sales and Inventory, Time & Attendance, Subscription and Payment transaction' }
 ];
 
 export const toolsData = [
-   assets.react_js_logo, assets.vue_js_logo, assets.angular_logo, assets.vscode, assets.postgress_logo, assets.php_logo, assets.git, 
+   assets.react_js_logo, assets.vue_js_logo, assets.angular_logo, assets.vscode,  assets.mysql_logo, assets.postgress_logo, assets.php_logo, assets.git, 
 ];

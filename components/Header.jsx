@@ -1,6 +1,5 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
 import { motion } from "motion/react"
 
 const Header = () => {
@@ -31,7 +30,7 @@ const Header = () => {
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-        I am a full stack software engineer from Cebu City, Philippines with 15+ years of experience in web application system.
+        I am a full stack software engineer from Cebu City, Philippines with 15 years of experience in web applications.
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
@@ -41,7 +40,7 @@ const Header = () => {
             transition={{duration: 0.6, delay: 1}}
             href="#contact"
             className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'
-            >contact me <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.a>
+            >Contact me <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.a>
 
             <motion.a 
             initial={{y: 30, opacity: 0}}
@@ -49,7 +48,7 @@ const Header = () => {
             transition={{duration: 0.6, delay: 1.2}}
             href="/IvanAlcuinoResume2025.pdf" download 
             className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
-                my resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
+                My resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
         </div>
     </div>
   )
