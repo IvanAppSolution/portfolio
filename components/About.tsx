@@ -2,7 +2,11 @@ import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import { motion } from "motion/react"
 
-const About = ({isDarkMode}) => {
+interface AboutProps {
+  isDarkMode: boolean;
+}
+
+const About: React.FC<AboutProps> = ({isDarkMode}) => {
   return (
     <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-10'
     initial={{opacity: 0}}
@@ -27,13 +31,13 @@ const About = ({isDarkMode}) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.6}}
-        className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+        className='flex w-full flex-col lg:flex-row items-center gap-10 my-10'>
             <motion.div
             initial={{opacity: 0, scale: 0.9}}
             whileInView={{opacity: 1, scale: 1}}
             transition={{duration: 0.6}}
             className='w-64 sm:w-80 rounded-3xl max-w-none  self-baseline'>
-                <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
+                <Image src={assets.profile_img} alt='user' className='w-full rounded-3xl'/>
             </motion.div>
             <motion.div 
             initial={{opacity: 0}}
@@ -41,8 +45,8 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.6}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'>
-                    I am an active and athletic person. I have built different types of applications for over 15 years as a software engineer. My teammates often tell me that I am always fully charged due to my quick response and problem solving skills. 
-                    I have good communication and can easily work with others. I learn fast and adapt easily. Once I start coding, I don’t stop working until I finish my objective. I always keep plans for the day, organize things to do and have a minimalist attitude.
+                    I am an active and athletic person. I have built different types of applications for over 15 years as a software engineer. My teammates often tell me that I am always fully charged due to my quick response and problem solving. 
+                    I have good communication and can easily work with others. I learn fast and adapt easily. Once I start coding, I don&apos;t stop working until I finish my objective. I always keep plans for the day and organize the things to do.
                 </p>
                 <motion.ul
                 initial={{opacity: 0}}
@@ -77,7 +81,7 @@ const About = ({isDarkMode}) => {
                         whileHover={{ scale: 1.1 }}
                         className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
                          key={index}>
-                            <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
+                            <Image src={tool} alt='Tool' className='w-8'/>
                         </motion.li>
                     ))}
                 </motion.ul>
