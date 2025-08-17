@@ -1,27 +1,42 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
+interface NavbarProps {
+    isDarkMode: boolean;
+    setIsDarkMode: (value: boolean | ((prev: boolean) => boolean)) => void;
+}
 
-    const [isScroll, setIsScroll] = useState(false)
-    const sideMenuRef = useRef();
+const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
 
-    const openMenu = ()=>{
-        sideMenuRef.current.style.transform = 'translateX(-16rem)'
+    const [isScroll, setIsScroll] = useState<boolean>(false)
+    const sideMenuRef = useRef<HTMLUListElement>(null);
+
+    const openMenu = (): void => {
+        if (sideMenuRef.current) {
+            sideMenuRef.current.style.transform = 'translateX(-16rem)'
+        }
     }
-    const closeMenu = ()=>{
-        sideMenuRef.current.style.transform = 'translateX(16rem)'
+    const closeMenu = (): void => {
+        if (sideMenuRef.current) {
+            sideMenuRef.current.style.transform = 'translateX(16rem)'
+        }
     }
 
     useEffect(()=>{
-        window.addEventListener('scroll', ()=>{
-            if(scrollY > 50){
+        const handleScroll = () => {
+            if(window.scrollY > 50){
                 setIsScroll(true)
             }else{
                 setIsScroll(false)
             }
-        })
+        }
+        
+        window.addEventListener('scroll', handleScroll)
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
     },[])
 
   return (

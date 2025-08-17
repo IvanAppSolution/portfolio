@@ -2,7 +2,11 @@ import { assets, serviceData } from '@/assets/assets'
 import Image from 'next/image'
 import { motion } from "motion/react"
 
-const Services = () => {
+interface ServicesProps {
+  isDarkMode: boolean;
+}
+
+const Services: React.FC<ServicesProps> = ({ isDarkMode }) => {
   return (
     <motion.div 
     initial={{ opacity: 0 }} 
