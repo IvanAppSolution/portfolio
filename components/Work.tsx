@@ -59,7 +59,7 @@ const Work: React.FC<WorkProps> = ({isDarkMode}) => {
             <div className='w-full flex flex-col items-center mb-24 dark:text-white' >
               <h2 className='font-semibold text-center'>{data.title}</h2>
               {/* <p className='text-gray-700 text-center dark:text-white/80'>{data.description}</p> */}
-              <ul className='w-4/5 grid grid-cols-2 list-disc text-gray-700 dark:text-white/80 mt-4'>
+              <ul className='w-5/5 grid grid-cols-2 list-disc text-gray-700 dark:text-white/80 mt-4'>
                 {data.features.map((feature, featureIndex) => (
                   <li className='w-96' key={featureIndex}>{feature}</li>
                 ))}

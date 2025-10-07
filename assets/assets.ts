@@ -193,6 +193,33 @@ export const workDataWeb: WorkDataWeb[] = [
         images: ['/proj-5/1.png', '/proj-5/2.png', '/proj-5/3.png'],
         githubLink: 'https://github.com/IvanAppSolution/expense-tracker-app',
         liveLink: '',
+    },
+    {
+        title: 'Philippine Travel and Tours - (Next.js / Typescript)',
+        description: 'Travel site and booking system using Next.js using Shadcn theme ui',
+        features: [
+            'Travel tour to deferent places in the Philippines',
+            'Sign-up and Sign-in using email, Google, GitHub',
+            'Store images in Cloudinary with optimization',
+            'Display image in gallery and carousel',            
+        ],
+        bgImage: '/proj-6/1.jpg',
+        images: ['/proj-6/1.jpg', '/proj-6/2.jpg', '/proj-6/3.jpg'],
+        githubLink: 'https://github.com/IvanAppSolution/phil-travel-tour',
+        liveLink: 'https://phil-travel-tour.vercel.app/travels',
+    },
+    {
+        title: 'Asking Bee - (Next.js / Typescript)',
+        description: 'Quiz bee like questionnaire using AI to generate question and verify the answer if correct or not',
+        features: [
+            'Generate question using Google Gemini Flash 2.5',
+            'Verify and show explanation of the answer',
+            'Increase the score if the anwer is correct',
+        ],
+        bgImage: '/proj-7/1.jpg',
+        images: ['/proj-7/1.jpg','/proj-7/2.jpg', '/proj-7/3.jpg'],
+        githubLink: 'https://github.com/IvanAppSolution/asking-bee',
+        liveLink: 'https://asking-bee.vercel.app/',
     }
 ];
 

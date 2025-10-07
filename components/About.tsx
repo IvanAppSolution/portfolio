@@ -46,7 +46,7 @@ const About: React.FC<AboutProps> = ({isDarkMode}) => {
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'>
                     I am an active and athletic person. I have built different types of applications for over 15 years as a software engineer. My teammates often tell me that I am always fully charged due to my quick response and problem solving. 
-                    I have good communication and can easily work with others. I learn fast and adapt easily. Once I start coding, I don&apos;t stop working until I finish my objective. I always keep plans for the day and organize the things to do.
+                    I have good communication and can easily work with others. I learn fast and adapt easily. Once I start coding, I don&apos;t stop working until I finish my objective. I always keep plans for the day and organize the things I do.
                 </p>
                 <motion.ul
                 initial={{opacity: 0}}
